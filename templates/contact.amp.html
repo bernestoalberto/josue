@@ -17,12 +17,10 @@ limitations under the License.
 
 <head>
     <meta charset="utf-8">
-    <title>Josue MDM</title>
+    <title>Contact Josue MDM</title>
     <link rel="canonical" href="https://www.ampstart.com/templates/land-see/land-see.amp">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-
     <script async="" src="https://cdn.ampproject.org/v0.js"></script>
-
 
 
     <style amp-boilerplate="">
@@ -78,8 +76,6 @@ limitations under the License.
             }
         }
     </style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-
-
     <script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async=""></script>
     <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script>
     <script custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" async=""></script>
@@ -3180,7 +3176,7 @@ limitations under the License.
         
         .land-see-blockquote:before {
             content: "";
-            background: url(../img/josue/structure/green-up-full-20.svg) 0 0/198px 156px no-repeat;
+            background: url(../img/land-see/structure/green-up-full-20.svg) 0 0/198px 156px no-repeat;
             position: absolute;
             top: 50%;
             left: 1rem;
@@ -3319,7 +3315,7 @@ limitations under the License.
 </head>
 
 <body class="land-see">
-    <amp-animation id="popularSlideIn" layout="nodisplay">
+    <amp-animation id="recommendedSlideIn" layout="nodisplay">
         <script type="application/json">
             {
                 "duration": ".4s",
@@ -3327,78 +3323,7 @@ limitations under the License.
                 "fill": "both",
                 "direction": "alternate",
                 "animations": [{
-                    "selector": ".land-see-popular",
-                    "delay": "calc(100ms * index())",
-                    "keyframes": [{
-                        "transform": "translateY(0)",
-                        "opacity": 1
-                    }]
-                }]
-            }
-        </script>
-    </amp-animation>
-    <amp-animation id="backgroundAnimation" layout="nodisplay">
-        <script type="application/json">
-            {
-                "duration": "1s",
-                "fill": "both",
-                "direction": "alternate",
-                "animations": [{
-                    "selector": ".land-see-background-image-left",
-                    "keyframes": [{
-                        "transform": "translateY(calc(height('.land-see-subscribe') * -1.2))"
-                    }]
-                }, {
-                    "selector": ".land-see-background-image-right",
-                    "keyframes": [{
-                        "transform": "translateY(calc(height('.land-see-subscribe') * 1.2))"
-                    }]
-                }]
-            }
-        </script>
-    </amp-animation>
-    <amp-animation id="recentAccentAnimation" layout="nodisplay">
-        <script type="application/json">
-            {
-                "duration": "1s",
-                "fill": "both",
-                "direction": "alternate",
-                "animations": [{
-                    "selector": ".land-see-recent-accent-image",
-                    "keyframes": [{
-                        "transform": "translateY(calc(height('.land-see-subscribe') * -0.4))"
-                    }]
-                }]
-            }
-        </script>
-    </amp-animation>
-    <amp-animation id="recentSlideIn" layout="nodisplay">
-        <script type="application/json">
-            {
-                "duration": ".4s",
-                "easing": "ease-in",
-                "fill": "both",
-                "direction": "alternate",
-                "animations": [{
-                    "selector": ".land-see-recent",
-                    "delay": "calc(100ms * index())",
-                    "keyframes": [{
-                        "transform": "translateY(0)",
-                        "opacity": 1
-                    }]
-                }]
-            }
-        </script>
-    </amp-animation>
-    <amp-animation id="accordionSlideIn" layout="nodisplay">
-        <script type="application/json">
-            {
-                "duration": ".4s",
-                "easing": "ease-in",
-                "fill": "both",
-                "direction": "alternate",
-                "animations": [{
-                    "selector": ".land-see-arts-culture-anim",
+                    "selector": ".land-see-recommended",
                     "delay": "calc(100ms * index())",
                     "keyframes": [{
                         "transform": "translateY(0)",
@@ -3429,12 +3354,12 @@ limitations under the License.
         <div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger md-hide lg-hide pr2  ">☰
         </div>
         <a href="index.amp.html" class="text-decoration-none inline-block mx-auto ampstart-headerbar-home-link  ">
-            <!--<div class="ampstart-headerbar-title mx-auto ">Josue MDM</div>-->
+            <!-- <div class="ampstart-headerbar-title mx-auto ">About Josue MDM</div> -->
             <img alt="Home" height="40" src="../img/josue/content/logo3.png" title="Home" width="150" class="">
         </a>
         <nav class="ampstart-headerbar-nav ampstart-nav  xs-hide sm-hide">
             <ul class="list-reset center m0 p0 flex justify-center nowrap">
-                <li class="ampstart-nav-item "><a href="services.amp.html" class="text-decoration-none block">Services</a></li>
+                <li class="ampstart-nav-item "><a href="stories.amp.html" class="text-decoration-none block">Services</a></li>
                 <li class="ampstart-nav-item ampstart-nav-dropdown relative">
 
                     <!-- Start Dropdown -->
@@ -3442,20 +3367,21 @@ limitations under the License.
                         <section>
                             <header>Services</header>
                             <ul class="ampstart-dropdown-items list-reset m0 p0">
-                                <li class="ampstart-dropdown-item"><a href="services.amp.html" class="text-decoration-none">All</a></li>
-                                <li class="ampstart-dropdown-item"><a href="services.amp.html?category=design#land-see-design" class="text-decoration-none">Design</a></li>
-                                <li class="ampstart-dropdown-item"><a href="services.amp.html?category=fashion#land-see-fashion" class="text-decoration-none">Fashion</a></li>
-                                <li class="ampstart-dropdown-item"><a href="services.amp.html?category=interiors#land-see-interiors" class="text-decoration-none">Interiors</a></li>
-                                <li class="ampstart-dropdown-item"><a href="services.amp.html?category=arts-culture#land-see-arts-culture" class="text-decoration-none">Arts &amp; Culture</a></li>
-                                <li class="ampstart-dropdown-item"><a href="services.amp.html?category=popular#land-see-popular" class="text-decoration-none">Popular</a></li>
+                                <li class="ampstart-dropdown-item"><a href="stories.amp.html" class="text-decoration-none">All</a></li>
+                                <li class="ampstart-dropdown-item"><a href="stories.amp.html?category=design#land-see-design" class="text-decoration-none">Design</a></li>
+                                <li class="ampstart-dropdown-item"><a href="stories.amp.html?category=fashion#land-see-fashion" class="text-decoration-none">Fashion</a></li>
+                                <li class="ampstart-dropdown-item"><a href="stories.amp.html?category=interiors#land-see-interiors" class="text-decoration-none">Interiors</a></li>
+                                <li class="ampstart-dropdown-item"><a href="stories.amp.html?category=arts-culture#land-see-arts-culture" class="text-decoration-none">Arts &amp; Culture</a></li>
+                                <li class="ampstart-dropdown-item"><a href="stories.amp.html?category=popular#land-see-popular" class="text-decoration-none">Popular</a></li>
                             </ul>
                         </section>
                     </amp-accordion>
                     <!-- End Dropdown -->
                 </li>
-                <li class="ampstart-nav-item "><a href="about.amp.html" class="text-decoration-none block">About</a></li>
-                <li class="ampstart-nav-item "><a href="services.amp.html" class="text-decoration-none block">Contact</a></li>
-                <li class="ampstart-nav-item "><a href="help.amp.html" class="text-decoration-none block">Help</a></li>
+
+                <li class="ampstart-nav-item "><a href="#" class="text-decoration-none block">About</a></li>
+                <li class="ampstart-nav-item "><a href="#" class="text-decoration-none block"><a class="ampContact</a></li>
+                <li class="ampstart-nav-item "><a href="#" class="text-decoration-none block">Help</a></li>
             </ul>
         </nav>
         <!--
@@ -3491,13 +3417,13 @@ limitations under the License.
         </div>
         <nav class="ampstart-sidebar-nav ampstart-nav">
             <ul class="list-reset m0 p0 ampstart-label">
-                <li class="ampstart-nav-item land-see-sidebar-nav-item ampstart-title-sm bold"><a class="ampstart-nav-link" href="services.amp.html">services</a></li>
+                <li class="ampstart-nav-item land-see-sidebar-nav-item ampstart-title-sm bold"><a class="ampstart-nav-link" href="services.amp.html">Services</a></li>
                 <li class="ampstart-nav-item ampstart-nav-dropdown relative ">
 
                     <!-- Start Dropdown-inline -->
                     <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
                         <section expanded="">
-                            <header>services</header>
+                            <header>Services</header>
                             <ul class="ampstart-dropdown-items list-reset m0 p0">
                                 <li class="ampstart-dropdown-item"><a href="services.amp.html" class="text-decoration-none">All</a></li>
                                 <li class="ampstart-dropdown-item"><a href="services.amp.html?category=design#land-see-design" class="text-decoration-none">Design</a></li>
@@ -3510,7 +3436,6 @@ limitations under the License.
                     </amp-accordion>
                     <!-- End Dropdown-inline -->
                 </li>
-                <li class="ampstart-nav-item land-see-sidebar-nav-item ampstart-title-sm bold"><a class="ampstart-nav-link" href="#">Shop</a></li>
                 <li class="ampstart-nav-item land-see-sidebar-nav-item ampstart-title-sm bold"><a class="ampstart-nav-link" href="#">About</a></li>
                 <li class="ampstart-nav-item land-see-sidebar-nav-item ampstart-title-sm bold"><a class="ampstart-nav-link" href="#">Contact</a></li>
             </ul>
@@ -3540,231 +3465,32 @@ limitations under the License.
     <!-- End Sidebar -->
     <!-- End Navbar -->
 
-    <section class="land-see-hero-container mx-auto mb3 relative overflow-hidden">
-        <div class="land-see-hero-left absolute">
-            <amp-carousel id="land-see-hero-left" class="land-see-hero-carousel mx-auto" width="1290" height="680" layout="responsive" [slide]="selectedSlide" on="slideChange:AMP.setState({selectedSlide: event.index})" noloading="" controls="" loop="" type="slides">
-                <div class="land-see-hero-content mx-auto relative">
-                    <amp-img class="cover land-see-hero-image land-see-cover-position-top" alt="Bold Coast Cottage" width="1290" height="680" layout="responsive" src="../img/josue/content/1.jpg">
-                    </amp-img>
-                    <div class="land-see-hero-typography mx-auto center z2 absolute">
-                        <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="services.amp.html?category&#x3D;interiors#land-see-interiors">Interiors</a>
-                        <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="about.amp.html">Bold Coast Cottage in Main</a></h1>
-                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                            My travels in Main have taken me to many destinations<br>not in the standard visitor’s guide.
-                        </p>
-                        <a class="land-see-hero-button text-decoration-none relative" href="about.amp.html">Read More</a>
-                    </div>
-                </div>
-                <div class="land-see-hero-content mx-auto relative">
-                    <amp-img class="cover land-see-hero-image land-see-cover-position-bottom" alt="Josue MDM" width="1290" height="680" layout="responsive" src="../img/josue/content/2.jpg">
-                    </amp-img>
-                    <!-- <div class="land-see-hero-typography mx-auto center z2 absolute">
-                        <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="services.amp.html?category&#x3D;fashion#land-see-fashion">Fashion</a>
-                        <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="about.amp.html">Josue MDM</a></h1>
-                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                            Relatively new to the industry, footwear Josue MDM uses a unique<br>mix of color, texture, and material to make her shoes the must-haves of this year.
-                        </p>
-                        <a class="land-see-hero-button text-decoration-none relative" href="about.amp.html">Read More</a>
-                    </div> -->
-                </div>
-                <div class="land-see-hero-content mx-auto relative">
-                    <amp-img class="cover land-see-hero-image land-see-cover-position-top" alt="Skykomish River Valley " width="1290" height="680" layout="responsive" src="../img/josue/content/3.jpg">
-                    </amp-img>
-                    <!--             <div class="land-see-hero-typography mx-auto center z2 absolute">
-                        <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="services.amp.html?category&#x3D;design#land-see-design">Design</a>
-                        <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="about.amp.html">Nature's Inspiration</a></h1>
-                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                            Habitant lobortis dolor, dictumst feugiat pede diam, minim turpis ut, quam<br>sociosqu egestas sed lorem auctor dui. Venenatis deserunt nulla.
-                        </p>
-                        <a class="land-see-hero-button text-decoration-none relative" href="about.amp.html">Read More</a>
-                    </div> -->
-                </div>
-            </amp-carousel>
-        </div>
-        <div class="land-see-hero-main mx-auto">
-            <amp-carousel id="land-see-hero-main" class="land-see-hero-carousel mx-auto" media="(min-width: 40.06rem)" width="1290" height="680" layout="responsive" [slide]="selectedSlide" on="slideChange:AMP.setState({selectedSlide: event.index})" noloading="" controls=""
-                loop="" type="slides">
-                <div class="land-see-hero-content mx-auto relative">
-                    <amp-img class="cover land-see-hero-image land-see-cover-position-top" alt="Bold Coast Cottage" width="1290" height="680" layout="responsive" src="../img/josue/content/1.jpg">
-                    </amp-img>
-                    <!--            <div class="land-see-hero-typography mx-auto center z2 absolute">
-                        <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="services.amp.html?category&#x3D;interiors#land-see-interiors">Interiors</a>
-                        <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="about.amp.html">Bold Coast Cottage in Main</a></h1>
-                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                            My travels in Main have taken me to many destinations<br>not in the standard visitor’s guide.
-                        </p>
-                        <a class="land-see-hero-button text-decoration-none relative" href="about.amp.html">Read More</a>
-                    </div> -->
-                </div>
-                <div class="land-see-hero-content mx-auto relative">
-                    <amp-img class="cover land-see-hero-image land-see-cover-position-top" alt="Bold Coast Cottage" width="1290" height="680" layout="responsive" src="../img/josue/content/2.jpg">
-                    </amp-img>
-                    <!--            <div class="land-see-hero-typography mx-auto center z2 absolute">
-                        <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="services.amp.html?category&#x3D;interiors#land-see-interiors">Interiors</a>
-                        <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="about.amp.html">Bold Coast Cottage in Main</a></h1>
-                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                            My travels in Main have taken me to many destinations<br>not in the standard visitor’s guide.
-                        </p>
-                        <a class="land-see-hero-button text-decoration-none relative" href="about.amp.html">Read More</a>
-                    </div> -->
-                </div>
-                <div class="land-see-hero-content mx-auto relative">
-                    <amp-img class="cover land-see-hero-image land-see-cover-position-top" alt="Bold Coast Cottage" width="1290" height="680" layout="responsive" src="../img/josue/content/3.jpg">
-                    </amp-img>
-                    <!--            <div class="land-see-hero-typography mx-auto center z2 absolute">
-                        <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="services.amp.html?category&#x3D;interiors#land-see-interiors">Interiors</a>
-                        <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="about.amp.html">Bold Coast Cottage in Main</a></h1>
-                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                            My travels in Main have taken me to many destinations<br>not in the standard visitor’s guide.
-                        </p>
-                        <a class="land-see-hero-button text-decoration-none relative" href="about.amp.html">Read More</a>
-                    </div> -->
-                </div>
-                <div class="land-see-hero-content mx-auto relative">
-                    <amp-img class="cover land-see-hero-image land-see-cover-position-bottom" alt="Josue MDM" width="1290" height="680" layout="responsive" src="../img/josue/content/4.jpg">
-                    </amp-img>
-                    <!--      <div class="land-see-hero-typography mx-auto center z2 absolute">
-                        <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="services.amp.html?category&#x3D;fashion#land-see-fashion">Fashion</a>
-                        <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="about.amp.html">Josue MDM</a></h1>
-                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                            Relatively new to the industry, footwear Josue MDM uses a unique<br>mix of color, texture, and material to make her shoes the must-haves of this year.
-                        </p>
-                        <a class="land-see-hero-button text-decoration-none relative" href="about.amp.html">Read More</a>
-                    </div> -->
-                </div>
-                <div class="land-see-hero-content mx-auto relative">
-                    <amp-img class="cover land-see-hero-image land-see-cover-position-top" alt="Skykomish River Valley " width="1290" height="680" layout="responsive" src="../img/josue/content/5.jpg">
-                    </amp-img>
-                    <!--                <div class="land-see-hero-typography mx-auto center z2 absolute">
-                        <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="services.amp.html?category&#x3D;design#land-see-design">Design</a>
-                        <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="about.amp.html">Nature's Inspiration</a></h1>
-                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                            Habitant lobortis dolor, dictumst feugiat pede diam, minim turpis ut, quam<br>sociosqu egestas sed lorem auctor dui. Venenatis deserunt nulla.
-                        </p>
-                        <a class="land-see-hero-button text-decoration-none relative" href="about.amp.html">Read More</a>
-                    </div> -->
-                </div>
-                <div class="land-see-hero-content mx-auto relative">
-                    <amp-img class="cover land-see-hero-image land-see-cover-position-top" alt="Bold Coast Cottage" width="1290" height="680" layout="responsive" src="../img/josue/content/6.jpg">
-                    </amp-img>
-                    <!--            <div class="land-see-hero-typography mx-auto center z2 absolute">
-                        <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="services.amp.html?category&#x3D;interiors#land-see-interiors">Interiors</a>
-                        <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="about.amp.html">Bold Coast Cottage in Main</a></h1>
-                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                            My travels in Main have taken me to many destinations<br>not in the standard visitor’s guide.
-                        </p>
-                        <a class="land-see-hero-button text-decoration-none relative" href="about.amp.html">Read More</a>
-                    </div> -->
-                </div>
-                <div class="land-see-hero-content mx-auto relative">
-                    <amp-img class="cover land-see-hero-image land-see-cover-position-top" alt="Bold Coast Cottage" width="1290" height="680" layout="responsive" src="../img/josue/content/7.jpg">
-                    </amp-img>
-                    <!--            <div class="land-see-hero-typography mx-auto center z2 absolute">
-                        <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="services.amp.html?category&#x3D;interiors#land-see-interiors">Interiors</a>
-                        <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="about.amp.html">Bold Coast Cottage in Main</a></h1>
-                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                            My travels in Main have taken me to many destinations<br>not in the standard visitor’s guide.
-                        </p>
-                        <a class="land-see-hero-button text-decoration-none relative" href="about.amp.html">Read More</a>
-                    </div> -->
-                </div>
-            </amp-carousel>
-        </div>
-        <div class="land-see-hero-main mx-auto">
-            <amp-carousel id="land-see-hero-main-small" class="land-see-hero-carousel mx-auto" media="(max-width: 40rem)" width="auto" height="570" layout="fixed-height" [slide]="selectedSlide" on="slideChange:AMP.setState({selectedSlide: event.index})" noloading=""
-                controls="" loop="" type="slides">
-                <div class="land-see-hero-content mx-auto relative">
-                    <amp-img class="cover land-see-hero-image land-see-cover-position-top" alt="Josue MDM" width="auto" height="278" layout="fixed-height" src="../img/josue/content/7.jpg">
-                    </amp-img>
-                    <!--             <div class="land-see-hero-typography mx-auto center z2 ">
-                        <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="services.amp.html?category&#x3D;fashion#land-see-fashion">Fashion</a>
-                        <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="about.amp.html">Designer<br>Kim Myeong</a></h1>
-                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                            Relatively new to the industry, footwear Josue MDM uses a unique mix of color, texture, and material to make her shoes the must-haves of this year.
-                        </p>
-                        <a class="land-see-hero-button text-decoration-none relative" href="about.amp.html">Read More</a>
-                    </div> -->
-                </div>
-                <div class="land-see-hero-content mx-auto relative">
-                    <amp-img class="cover land-see-hero-image" alt="Skykomish River Valley " width="auto" height="278" layout="fixed-height" src="../img/josue/content/1.jpg">
-                    </amp-img>
-                    <!--                     <div class="land-see-hero-typography mx-auto center z2 ">
-                        <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="services.amp.html?category&#x3D;design#land-see-design">Design</a>
-                        <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="about.amp.html">Nature's Inspiration</a></h1>
-                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                            Habitant lobortis dolor, dictumst feugiat pede diam, minim turpis ut, quam sociosqu egestas sed lorem auctor dui. Venenatis deserunt nulla.
-                        </p>
-                        <a class="land-see-hero-button text-decoration-none relative" href="about.amp.html">Read More</a>
-                    </div> -->
-                </div>
-                <div class="land-see-hero-content mx-auto relative">
-                    <amp-img class="cover land-see-hero-image land-see-cover-position-top" alt="Bold Coast Cottage" width="auto" height="278" layout="fixed-height" src="../img/josue/content/2.jpg">
-                    </amp-img>
-                    <!--             <div class="land-see-hero-typography mx-auto center z2 ">
-                        <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="services.amp.html?category&#x3D;interiors#land-see-interiors">Interiors</a>
-                        <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="about.amp.html">Bold Coast Cottage in Main</a></h1>
-                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                            My travels in Main have taken me to many destinations not in the standard visitor’s guide.
-                        </p>
-                        <a class="land-see-hero-button text-decoration-none relative" href="about.amp.html">Read More</a>
-                    </div> -->
-                </div>
-            </amp-carousel>
-            <div class="land-see-hero-progress mt2 center">
-                <button on="tap:AMP.setState({selectedSlide: 0})" class="px0">
-            <amp-img [class]="selectedSlide &#x3D;&#x3D; 0 ? &#39;land-see-progress-indicator land-see-selected-slide&#39; : &#39;land-see-progress-indicator&#39;" class="land-see-progress-indicator land-see-selected-slide" alt="Go to slide 1" width="7" height="7" layout="fixed" src="../img/josue/structure/carousel-progress-indicator.svg">
-            </amp-img>
-          </button>
-                <button on="tap:AMP.setState({selectedSlide: 1})" class="px1">
-            <amp-img [class]="selectedSlide &#x3D;&#x3D; 1 ? &#39;land-see-progress-indicator land-see-selected-slide&#39; : &#39;land-see-progress-indicator&#39;" class="land-see-progress-indicator" alt="Go to slide 2" width="7" height="7" layout="fixed" src="../img/josue/structure/carousel-progress-indicator.svg">
-            </amp-img>
-          </button>
-                <button on="tap:AMP.setState({selectedSlide: 2})" class="px0">
-            <amp-img [class]="selectedSlide &#x3D;&#x3D; 2 ? &#39;land-see-progress-indicator land-see-selected-slide&#39; : &#39;land-see-progress-indicator&#39;" class="land-see-progress-indicator" alt="Go to slide 3" width="7" height="7" layout="fixed" src="../img/josue/structure/carousel-progress-indicator.svg">
-            </amp-img>
-          </button>
-            </div>
-        </div>
-        <div class="land-see-hero-right absolute">
-            <amp-carousel id="land-see-hero-right" class="land-see-hero-carousel mx-auto" width="1290" height="680" layout="responsive" [slide]="selectedSlide" on="slideChange:AMP.setState({selectedSlide: event.index})" noloading="" controls="" loop="" type="slides">
-                <div class="land-see-hero-content mx-auto relative">
-                    <amp-img class="cover land-see-hero-image land-see-cover-position-top" alt="Skykomish River Valley " width="1290" height="680" layout="responsive" src="../img/josue/content/8.jpg">
-                    </amp-img>
-                    <!--                <div class="land-see-hero-typography mx-auto center z2 absolute">
-                        <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="services.amp.html?category&#x3D;design#land-see-design">Design</a>
-                        <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="about.amp.html">Nature's Inspiration</a></h1>
-                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                            Habitant lobortis dolor, dictumst feugiat pede diam, minim turpis ut, quam<br>sociosqu egestas sed lorem auctor dui. Venenatis deserunt nulla.
-                        </p>
-                        <a class="land-see-hero-button text-decoration-none relative" href="about.amp.html">Read More</a>
-                    </div> -->
-                </div>
-                <div class="land-see-hero-content mx-auto relative">
-                    <amp-img class="cover land-see-hero-image land-see-cover-position-top" alt="Bold Coast Cottage" width="1290" height="680" layout="responsive" src="../img/josue/content/4.jpg">
-                    </amp-img>
-                    <!--           <div class="land-see-hero-typography mx-auto center z2 absolute">
-                        <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="services.amp.html?category&#x3D;interiors#land-see-interiors">Interiors</a>
-                        <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="about.amp.html">Bold Coast Cottage in Main</a></h1>
-                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                            My travels in Main have taken me to many destinations<br>not in the standard visitor’s guide.
-                        </p>
-                        <a class="land-see-hero-button text-decoration-none relative" href="about.amp.html">Read More</a>
-                    </div> -->
-                </div>
-                <div class="land-see-hero-content mx-auto relative">
-                    <amp-img class="cover land-see-hero-image land-see-cover-position-bottom" alt="Josue MDM" width="1290" height="680" layout="responsive" src="../img/josue/content/5.jpg">
-                    </amp-img>
-                    <!-- <div class="land-see-hero-typography mx-auto center z2 absolute">
-                        <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="services.amp.html?category&#x3D;fashion#land-see-fashion">Fashion</a>
-                        <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="about.amp.html">Josue MDM</a></h1>
-                        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                            Relatively new to the industry, footwear Josue MDM uses a unique<br>mix of color, texture, and material to make her shoes the must-haves of this year.
-                        </p>
-                        <a class="land-see-hero-button text-decoration-none relative" href="about.amp.html">Read More</a>
-                    </div>-->
-                </div>
-            </amp-carousel>
-        </div>
+    <section class="land-see-story-detail relative mx-auto mb4 pt2">
+        <h2 class="land-see-story-subtitle ampstart-subtitle bold max-width-3 mx-auto pb0 pt4 px4">Contact us</h2>
+        <p class="land-see-story-copy max-width-3 mx-auto py2 px4">
+            <p class="land-see-story-copy max-width-3 mx-auto py2 px4">
+                <b style="color:black">Address</b>: 351 NW 42nd Ave #402, Miami, FL 33126<br>
+                <b style="color:black">Hours</b>:
+                <ul class="land-see-story-copy max-width-3 mx-auto py2 px4">
+                    <li> Monday 9AM–6PM </li>
+                    <li>
+                        Tuesday 9AM–6PM</li>
+                    <li>
+                        Wednesday 9AM–6PM</li>
+                    <li>
+                        Thursday 9AM–6PM </li>
+                    <li> Friday 9AM–6PM </li>
+                    <li>Saturday Closed</li>
+                    <li>
+                        Sunday Closed</li>
+                    </ol>
+                    <b style="color:black">Phone </b>:
+                    <a href="tel:+1-305-642-4142">1-305-642-4142</a>
+            </p>
+    </section>git push -f
+    <section class="land-see-story-detail relative mx-auto mb4 pt2">
+
+        <div id="map" style="width:900px;height:400px" class="land-see-story-copy max-width-3 mx-auto py2 px4"></div>
     </section>
     <!-- Start Footer -->
     <footer class="ampstart-footer flex flex-column items-center mx-auto max-width-3 ">
@@ -3781,18 +3507,37 @@ limitations under the License.
                 <a href="mailto:jalfonso.dmd@gmail.com" target="_blank" class="inline-block p1" aria-label="Link to Josue MDM E-mail"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18.4" viewbox="0 0 56 43"><title>email</title><path d="M10.5 6.4C9.1 6.4 8 7.5 8 8.9v21.3c0 1.3 1.1 2.5 2.5 2.5h34.9c1.4 0 2.5-1.2 2.5-2.5V8.9c0-1.4-1.1-2.5-2.5-2.5H10.5zm2.1 2.5h30.7L27.9 22.3 12.6 8.9zm-2.1 1.4l16.6 14.6c.5.4 1.2.4 1.7 0l16.6-14.6v19.9H10.5V10.3z" class="ampstart-icon ampstart-icon-email"></path></svg></a>
             </li>
         </ul>
-        <nav class="ampstart-footer-nav">
-            <ul class="list-reset flex flex-wrap mb3">
-                <li class="px1"><a class="text-decoration-none ampstart-label" href="services.amp.html">Services</a></li>
-                <li class="px1"><a class="text-decoration-none ampstart-label" href="about.amp.html">About</a></li>
-                <li class="px1"><a class="text-decoration-none ampstart-label" href="contact.amp.html">Contact</a></li>
-            </ul>
-        </nav>
         <small>
-      Josue MDM, 2018 
+      © Josue MDM, 2018
     </small>
     </footer>
     <!-- End Footer -->
+    <script>
+        // function myMap() {
+        // var mapOptions = {
+        //     center: new google.maps.LatLng(25.775571,-80.263780),
+        //     zoom: 10,
+        //     mapTypeId: google.maps.MapTypeId.ROADMAP,
+        //     animation: google.maps.Animation.BOUNCE
+        // }
+        // var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        function myMap() {
+            var myCenter = new google.maps.LatLng(25.775571, -80.263780);
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+                center: myCenter,
+                zoom: 13,
+                animation: google.maps.Animation.BOUNCE
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({
+                position: myCenter
+            });
+            marker.setMap(map);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW0V7Eo9UlhtDDtwaNIO9lylBWYi7NpHc&callback=myMap"></script>
 </body>
+
 
 </html>
