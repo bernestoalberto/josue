@@ -3487,10 +3487,10 @@ limitations under the License.
                     <b style="color:black">Phone </b>:
                     <a href="tel:+1-305-642-4142">1-305-642-4142</a>
             </p>
-    </section>git push -f
+    </section>
     <section class="land-see-story-detail relative mx-auto mb4 pt2">
 
-        <div id="map" style="width:900px;height:400px" class="land-see-story-copy max-width-3 mx-auto py2 px4"></div>
+        <div id="map" style="width:100%;height:400px" class="land-see-story-copy max-width-3 mx-auto py2 px4"></div>
     </section>
     <!-- Start Footer -->
     <footer class="ampstart-footer flex flex-column items-center mx-auto max-width-3 ">
@@ -3527,13 +3527,46 @@ limitations under the License.
             var mapOptions = {
                 center: myCenter,
                 zoom: 13,
-                animation: google.maps.Animation.BOUNCE
+                animation: google.maps.Animation.BOUNCE,
+				    panControl: true,
+    zoomControl: true,
+	zoomControlOptions: {
+    style: google.maps.ZoomControlStyle.SMALL
+},
+    mapTypeControl: true,
+	mapTypeControlOptions: {
+    style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+},
+    scaleControl: true,
+    streetViewControl: true,
+    overviewMapControl: true,
+    rotateControl: true  
             };
             var map = new google.maps.Map(mapCanvas, mapOptions);
             var marker = new google.maps.Marker({
                 position: myCenter
             });
             marker.setMap(map);
+			  google.maps.event.addListener(marker,'click',function() {
+    var infowindow = new google.maps.InfoWindow({
+      content:"Dr Josue Alfonso Clinic!"
+    });
+  infowindow.open(map,marker);
+  });
+  var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
         }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW0V7Eo9UlhtDDtwaNIO9lylBWYi7NpHc&callback=myMap"></script>
